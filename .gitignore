@@ -1,5 +1,43 @@
-__pycache__/
-*.pyc
+# ===========================================================================
+# SECRETS -- never commit these
+# ===========================================================================
+# The script reads any of these names. config.env.example is the safe
+# template that IS committed; the real ones never are.
+config.env
+config.ini
+sp_copy.env
 .env
-.venv/
+*.env
+!*.env.example
+!config.env.example
+
+# Certificates / keys, if you switch off client secrets later
+*.pem
+*.pfx
+*.key
+*.p12
+
+
+# ===========================================================================
+# PYTHON
+# ===========================================================================
+__pycache__/
+*.py[cod]
+*$py.class
 venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+
+
+# ===========================================================================
+# EDITORS / OS
+# ===========================================================================
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
